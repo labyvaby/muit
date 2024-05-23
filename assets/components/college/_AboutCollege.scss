@@ -1,0 +1,61 @@
+.AboutCollege{
+    margin-top: 100px;
+    h2{
+        color: #0c0834;
+        text-align: left;
+        font-family: "Inter-SemiBold", sans-serif;
+        font-size: 60px;
+        font-weight: 600;
+    }
+    p{
+        color: #333334;
+        text-align: left;
+        font-family: "Inter-Medium", sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+        margin: 30px 0 40px 0;
+    }
+    &__block{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+    &__box{
+        background: #ffffff;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: rgba(128, 128, 128, 0.8);
+        border-width: 1px;
+        padding: 5px 31px 5px 31px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+        justify-content: flex-start; 
+        flex-shrink: 0;
+        width: 314px;
+        height: 118px;
+        box-shadow: var(--one-box-shadow, 0px 4px 4px 0px rgba(0, 0, 0, 0.25));
+        overflow: hidden;
+        h3{
+            color: var(--green, #008f6a);
+            text-align: left;
+            font-family: "Inter-Medium", sans-serif;
+            font-size: 34px;
+            font-weight: 500;
+        }
+        P{
+            color: #514d4d;
+            text-align: left;
+            font-family: "Inter-Regular", sans-serif;
+            font-size: 19px;
+            font-weight: 400;
+        }
+    }
+    @media (max-width:450px) {
+        h2{
+            font-size: 40px;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.studying{
+  margin-top: 100px;
+  &__dropdown--block{
+    margin: 30px 0 30px 0;
+    width: 100%;
+    display: flex;
+    gap: 35px;
+  }
+  &__dropdown{
+    background: #ffffff;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgba(112, 109, 109, 0.73);
+    border-width: 1px;
+    padding: 18px 19px 18px 19px;
+    width: 35%;
+  }
+  &__option{
+    color: rgba(0, 0, 0, 0.4);
+    text-align: left;
+    font-family: "Inter-Medium", sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    position: relative;
+    width: 233.43px;
+  }
+}

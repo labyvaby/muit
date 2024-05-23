@@ -1,0 +1,93 @@
+.studying{
+    h2{
+        color: var(--blue, #0c0834);
+        text-align: left;
+        font-size: 60px;
+        font-weight: 500;
+    }
+    &__btn{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        gap: 30px;
+        button{
+            border-radius: 50px;
+            border-style: solid;
+            border-color: var(--green, #008f6a);
+            border-width: 1.5px;
+            padding: 10px 50px;
+            background: #ffffff;
+        }
+        button:hover{
+            color: #ffffff;
+            background: #008f6a;
+            transition: 0.5s;
+        }
+    }
+    &__block{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+    &__box{
+        background: #e7e3ff;
+        padding: 30px 0 30px 30px;
+        border-radius: 10px;
+        width: 355px;
+        h3{
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 23px;
+            font-weight: 500;
+        }
+        h4{
+            margin: 20px 0;
+        }
+    }
+    &__box--btn{
+        display: flex;
+        gap: 10px;
+        button{
+            background: #ffffff;
+            border-radius: 5px;
+            border-style: solid;
+            border-color: var(--green, #008f6a);
+            color: #008f6a;
+            border-width: 1.5px;
+            padding: 10px 25px;
+        }
+        button:hover{
+            transition: 0.3s;
+            background: #008f6a;
+            color: #ffffff;
+        }
+    }
+    &__add{
+        margin-top: 50px;
+        font-size: 23px;
+        font-weight: 500;
+        background: #ffffff;
+        border-radius: 5px;
+        padding: 10px 40px;
+        border-color: var(--green, #008f6a);
+        color: #0c0834;
+        border-style: solid;
+    }
+    &__add:hover{
+        background: #008f6a;
+        color: #ffffff;
+        transition: 0.5s;
+    }
+
+    @media (max-width:768px) {
+        &__btn{
+            justify-content: center;
+        }
+    }
+
+    @media (max-width:1000px) {
+        &__block{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

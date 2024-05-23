@@ -1,0 +1,123 @@
+.university {
+    margin: 60px 0;
+    h2 {
+        font-size: 32px;
+        font-weight: 600;
+        color: #2b1e74;
+
+    }
+
+    h3 {
+        font-size: 32px;
+        font-weight: 600;
+        color: #008f6a;
+        margin: 30px 0 50px 0;
+    }
+
+    p {
+        color: #0c0834;
+        font-size: 16px;
+        font-weight: 500;
+        width: 673px;
+        margin-bottom: 70px;
+    }
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__left {
+        margin-top: 150px;
+
+        button {
+            background: #008f6a;
+            border-radius: 10px;
+            font-size: 20px;
+            color: #f8f6f6;
+            padding: 18px 38px 18px 38px;
+            border-color: #008f6a;
+            font-family: "Inter";
+            border: none;
+            width: 271px;
+            cursor: pointer;
+            transition: .4s;
+        }
+        button:hover{
+            background: #ffff;
+            border-style: solid;
+            border-color: #008f6a;
+            color: #000000;
+        }
+    }
+    &__mobile--version {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            font-size: 32px;
+            font-weight: 600;
+            color: #2b1e74;
+
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 600;
+            color: #008f6a;
+            margin: 30px 0 50px 0;
+        }
+
+        p {
+            color: #0c0834;
+            font-size: 16px;
+            font-weight: 500;
+            width: 350px;
+        }
+
+        button {
+            background: #008f6a;
+            border-radius: 10px;
+            font-size: 27px;
+            color: #f8f6f6;
+            padding: 18px 38px 18px 38px;
+            font-family: "Inter";
+            border: none; 
+        }
+        button:hover{
+            background: #2e6cbd;
+            color: #000000;
+            transition: .4s;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    img {
+        width: 100%;
+        margin: auto;
+    }
+    @media (max-width:15360px) {
+        .university__mobile {
+            display: none;
+        }
+    }
+
+    @media (max-width:1150px) {
+        .university__mobile {
+            display: block;
+        }
+
+        &__left {
+            display: none;
+        }
+
+        &__right {
+            display: none;
+        }
+    }
+}

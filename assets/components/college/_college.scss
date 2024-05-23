@@ -1,0 +1,121 @@
+.college{
+    margin-top: 30px;
+    h1 {
+        margin-bottom: 50px;
+        color: #2b1e74;
+        text-align: left;
+        font-family: "Inter-SemiBold", sans-serif;
+        font-size: 65px;
+        font-weight: 600;
+        position: relative;
+
+
+    }
+
+    p {
+        color: #0c0834;
+        font-size: 16px;
+        font-weight: 500;
+        width: 673px;
+        margin-bottom: 70px;
+    }
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__left {
+        margin-top: 150px;
+
+        button {
+            background: #008f6a;
+            border-color: var(--green, #008f6a);
+            border-style: solid;
+            border-radius: 10px;
+            font-size: 27px;
+            padding: 18px 38px 18px 38px;
+            font-family: "Inter";
+            color: #ffffff;
+            border: none;
+            width: 271px;
+            cursor: pointer;
+        }
+        button:hover{
+            background: #ffff;
+            color: #000000;
+            transition: .4s;
+        }
+    }
+    &__mobile--version {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            font-size: 32px;
+            font-weight: 600;
+            color: #2b1e74;
+
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 600;
+            color: #008f6a;
+            margin: 30px 0 50px 0;
+        }
+
+        p {
+            color: #0c0834;
+            font-size: 16px;
+            font-weight: 500;
+            width: 350px;
+        }
+
+        button {
+            background: #008f6a;
+            border-radius: 10px;
+            font-size: 27px;
+            color: #f8f6f6;
+            padding: 18px 38px 18px 38px;
+            font-family: "Inter";
+            border: none; 
+        }
+        button:hover{
+            background: #ffffff;
+            color: #000000;
+            transition: .4s;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    img {
+        width: 100%;
+        margin: auto;
+    }
+    @media (max-width:15360px) {
+        .college__mobile {
+            display: none;
+        }
+    }
+
+    @media (max-width:1150px) {
+        .college__mobile {
+            display: block;
+        }
+
+        &__left {
+            display: none;
+        }
+
+        &__right {
+            display: none;
+        }
+    }
+}
+

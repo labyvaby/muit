@@ -1,0 +1,39 @@
+.direction{
+    &__content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    &__box{
+        background: #f1f4fa;
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 650px;
+        height: 343px;
+        img{
+            width: 50px;
+            height: 50px;
+        }
+        button{
+            width: 189px;
+            height: 40px;
+        }
+    }
+
+    @media (max-width:768px) {
+        &__box{
+            width: 343px;
+            height: 235px;
+            P{
+                font-size: 18px;
+                font-weight: 400;
+            }
+        }
+    }
+}

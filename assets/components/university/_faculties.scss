@@ -1,0 +1,99 @@
+.faculties{
+    margin: 60px 0;
+    h1{
+        color: #0c0834;
+        font-size: 29px;
+        font-weight: 500;
+    }
+    &__block{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+    &__box{
+        background: #e7e3ff;
+        border-radius: 10px;
+        padding: 10px 20px 10px 10px;
+        margin-top: 20px;
+        transition: 0.5s;
+        cursor: pointer;
+        h2{
+            color: #0c0834;
+            font-size: 28px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 17px;
+            font-weight: 500;
+            color: #888585;
+        }
+        svg{
+            float: right;
+            width: 51px;
+        }
+    }
+    &__box:hover{
+        background: #008f6a;
+        h2{
+            color: #fff;
+            transition: 0.5s;
+        }
+        p{
+            color: #fff;
+            transition: 0.5s;
+        }
+        svg {
+            color: #fff;
+        }
+    }
+    &__filter{
+        ul {
+            margin-top: 45px;
+            display: flex;
+            font-size: 28px;
+            font-weight: 500;
+            li {
+              padding: 10px 40px;
+              border: 1px solid #000;
+              cursor: pointer;
+              transition: 0.3s;
+            }
+          }
+          li:hover {
+            background: #008f6a;
+            color: #fff;
+            border: none;
+          }
+    }
+    button{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        border-style: solid;
+        border-color: #000000;
+        border-width: 1px;
+        padding: 10px;
+        width: 290px;
+        background: none;
+        font-size: 23px;
+        font-weight: 600;
+        color: #0c0834;
+        margin-top: 30px;
+        cursor: pointer;
+      }
+      .hidden { display: none; }
+      @media (max-width:1024px) {
+          &__filter{
+              display: none;
+          }
+      }
+      @media (max-width:800px) {
+        &__block{
+            grid-template-columns: repeat(1, 1fr);
+        }
+      }
+}

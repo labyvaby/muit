@@ -2345,6 +2345,14 @@ a {
   font-size: 23px;
   font-weight: 500;
   cursor: pointer;
+  transition: 0.4s;
+  border-style: solid;
+  border-color: #008f6a;
+}
+.AboutUniversity__btn button:hover {
+  border-style: solid;
+  background: #fff;
+  color: #000;
 }
 .AboutUniversity__science p {
   font-size: 20px;

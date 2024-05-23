@@ -101,6 +101,9 @@ a {
   display: flex;
   align-items: center;
 }
+.header__box p {
+  width: 100px;
+}
 .header__right {
   display: flex;
   align-items: center;

@@ -20,6 +20,11 @@
         display: flex;
         align-items: center;
     }
+    &__box{
+        p{
+            width: 100px;
+        }
+    }
     &__right{
         display: flex;
         align-items: center;

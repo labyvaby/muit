@@ -272,6 +272,7 @@ a {
   font-family: "Inter";
   font-size: 29px;
   font-weight: 500;
+  margin: 20px 0;
 }
 .education__block {
   display: grid;
@@ -379,17 +380,16 @@ a {
   display: flex;
   font-size: 28px;
   font-weight: 500;
+  transition: 0.3s;
 }
 .faculties__filter ul li {
   padding: 10px 40px;
   border: 1px solid #000;
   cursor: pointer;
-  transition: 0.3s;
 }
 .faculties__filter li:hover {
   background: #008f6a;
   color: #fff;
-  border: none;
 }
 .faculties button {
   margin: 0 auto;
@@ -431,12 +431,13 @@ a {
   color: #0c0834;
   font-weight: 500;
   width: 900px;
+  margin: 30px 0;
 }
 .reception h2 {
   color: #676363;
   font-size: 18.3999996185px;
   font-weight: 500;
-  margin: 30px 0 30px 0;
+  margin: 30px 0;
 }
 .reception__block {
   display: flex;
@@ -457,7 +458,6 @@ a {
   font-size: 14px;
   font-weight: 500;
   color: #0c0834;
-  margin-bottom: 15px;
 }
 .reception__box img {
   float: right;
@@ -479,6 +479,7 @@ a {
   color: #0c0834;
   font-weight: 500;
   width: 900px;
+  margin: 30px 0;
 }
 .diploma__block {
   display: flex;
@@ -516,7 +517,6 @@ a {
 .staff__filter li:hover {
   background: #008f6a;
   color: #fff;
-  border: none;
 }
 .staff__block {
   display: flex;
@@ -573,13 +573,17 @@ a {
 .partners__block {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   gap: 20px;
 }
 .partners h1 {
   font-size: 60px;
   font-weight: 500;
   color: #0c0834;
+  margin: 30px 0;
+}
+.partners img {
+  cursor: pointer;
 }
 .partners button {
   margin: 0 auto;
@@ -602,6 +606,11 @@ a {
 .partners .hiddenn {
   display: none;
 }
+@media (max-width: 1240px) {
+  .partners__block {
+    justify-content: center;
+  }
+}
 @media (max-width: 700px) {
   .partners h1 {
     font-size: 29px;
@@ -623,12 +632,13 @@ a {
   color: #0c0834;
   font-weight: 500;
   font-size: 60px;
+  margin: 30px 0;
 }
 .news p {
   color: #0c0834;
   font-weight: 500;
   font-size: 25px;
-  margin-bottom: 30px;
+  margin: 30px 0;
   width: 420px;
   word-wrap: break-word;
 }
@@ -643,6 +653,7 @@ a {
   height: 100%;
   background: #e7e3ff;
   border-radius: 30px;
+  padding: 15px;
 }
 .news__box img {
   width: 427px;
@@ -711,12 +722,13 @@ a {
   color: #0c0834;
   font-weight: 500;
   font-size: 54px;
+  margin: 30px 0;
 }
 .review h3 {
   color: #0c0834;
   font-weight: 500;
   font-size: 25px;
-  margin-bottom: 30px;
+  margin: 30px 0;
 }
 .review p {
   color: #645c96;
@@ -755,6 +767,7 @@ a {
   color: #0c0834;
   font-size: 16px;
   font-weight: 700;
+  margin: 30px 0;
 }
 .footer__box {
   display: flex;
@@ -1014,6 +1027,7 @@ a {
   text-align: left;
   font-size: 60px;
   font-weight: 500;
+  margin: 30px 0;
 }
 .studying__btn {
   display: flex;
@@ -1028,11 +1042,11 @@ a {
   border-width: 1.5px;
   padding: 10px 50px;
   background: #ffffff;
+  transition: 0.5s;
 }
 .studying__btn button:hover {
   color: #ffffff;
   background: #008f6a;
-  transition: 0.5s;
 }
 .studying__block {
   display: grid;
@@ -1103,10 +1117,8 @@ a {
   background: #008F6A;
   margin: 50px 0 0 0;
   padding-top: 30px;
-  text-align: center;
 }
 .application h2 {
-  text-align: center;
   color: #ffffff;
   font-size: 25px;
   font-weight: 500;
@@ -1115,11 +1127,12 @@ a {
 .application__block {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   gap: 10px;
 }
 .application__block input {
-  width: 330px;
+  width: 425px;
   background: #ffffff;
   border-radius: 10px;
   border-style: solid;
@@ -1128,6 +1141,7 @@ a {
   height: 50px;
   padding: 0 0 0 10px;
   outline: none;
+  font-weight: 500;
 }
 .application__block button {
   background: var(--blue, #0c0834);
@@ -1146,7 +1160,6 @@ a {
 }
 .application__chekbox {
   display: flex;
-  justify-content: center;
   gap: 10px;
 }
 .application__chekbox input {
@@ -1155,8 +1168,12 @@ a {
 }
 .application__chekbox p {
   color: #ffffff;
-  font-size: 15px;
   font-weight: 600;
+}
+@media (max-width: 1240px) {
+  .application__block {
+    justify-content: center;
+  }
 }
 
 .specialAbilities {

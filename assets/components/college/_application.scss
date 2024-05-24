@@ -2,9 +2,7 @@
     background: #008F6A;
     margin: 50px 0 0 0;
     padding-top: 30px;
-    text-align: center;
     h2{
-        text-align: center;
         color: #ffffff;
         font-size: 25px;
         font-weight: 500;
@@ -13,10 +11,11 @@
     &__block{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
         gap: 10px;
         input{
-            width: 330px;
+            width: 425px;
             background: #ffffff;
             border-radius: 10px;
             border-style: solid;
@@ -25,6 +24,7 @@
             height: 50px;
             padding: 0 0 0 10px;
             outline: none;
+            font-weight: 500;
         }
         button{
             background: var(--blue, #0c0834);
@@ -44,7 +44,6 @@
     }
     &__chekbox{
         display: flex;
-        justify-content: center;
         gap: 10px;
         input{
             width: 20px;
@@ -52,8 +51,12 @@
         }
         p{
             color: #ffffff;
-            font-size: 15px;
             font-weight: 600;
+        }
+    }
+    @media (max-width:1240px) {
+        &__block{
+            justify-content: center;
         }
     }
 }

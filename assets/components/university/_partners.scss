@@ -3,13 +3,17 @@
     &__block{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
         gap: 20px;
     }
     h1{
         font-size: 60px;
         font-weight: 500;
         color: #0c0834;
+        margin: 30px 0
+    }
+    img{
+        cursor: pointer;
     }
     button{
         margin: 0 auto;
@@ -31,6 +35,11 @@
       }
     .hiddenn { display: none; }
 
+    @media (max-width:1240px) {
+        &__block{
+            justify-content: center;
+        }
+    }
     @media (max-width:700px) {
         h1{
             font-size: 29px;

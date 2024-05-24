@@ -54,17 +54,16 @@
             display: flex;
             font-size: 28px;
             font-weight: 500;
+            transition: 0.3s;
             li {
               padding: 10px 40px;
               border: 1px solid #000;
               cursor: pointer;
-              transition: 0.3s;
             }
           }
           li:hover {
             background: #008f6a;
             color: #fff;
-            border: none;
           }
     }
     button{

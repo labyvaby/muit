@@ -17,8 +17,9 @@
     &__block{
         display: flex;
         justify-content: center;
-        gap: 30px;
         flex-wrap: wrap;
+        margin-top: 50px;
+        gap: 30px;
     }
     &__box{
         width: 427px;
@@ -69,6 +70,7 @@
     }
     &__box{
         width: 343px;
+        margin: auto;
         img{
             width: 343px;
         }

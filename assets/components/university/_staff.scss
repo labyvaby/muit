@@ -26,6 +26,7 @@
     &__block {
         display: flex;
         flex-wrap: wrap;
+        margin-top: 50px;
         gap: 30px;
     }
     &__box{
@@ -60,7 +61,7 @@
 
         }
     }
-    @media (max-width:900px) {
+    @media (max-width:1240px) {
         &__box {
             width: 343px;
             flex-wrap: wrap;

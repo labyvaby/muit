@@ -1,6 +1,11 @@
 .staff {
     margin: 50px 0;
-
+    &__title{
+        font-weight: 600;
+        font-size: 50px;
+        color:#2b1e74;
+        margin: 50px 0px;
+    }
     &__filter {
         ul {
             margin-top: 45px;

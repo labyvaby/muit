@@ -7,16 +7,18 @@
       margin-top: 35px;
     }
   }
+
+  &__ulSecond {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
   &__block {
     margin-top: 60px;
     padding: 16px 27px;
     background: #fff;
     border-radius: 55px;
-    ul {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
+
     span {
       font-weight: bold;
     }
@@ -124,9 +126,8 @@
       transition: 0.4s;
       border-style: solid;
       border-color: #008f6a;
-      
     }
-    button:hover{
+    button:hover {
       border-style: solid;
       background: #fff;
       color: #000;
@@ -188,7 +189,6 @@
     }
   }
 }
-
 
 @media screen and (max-width: 375px) {
   .AboutUniversity {

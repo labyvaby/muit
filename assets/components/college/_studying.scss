@@ -1,4 +1,8 @@
 .studying{
+    &__content{
+        display: flex;
+        flex-direction: column;
+    }
     h2{
         color: var(--blue, #0c0834);
         text-align: left;
@@ -25,16 +29,17 @@
         }
     }
     &__block{
-        display: grid;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         gap: 10px;
-        grid-template-columns: repeat(3, 1fr);
         justify-items: center;
     }
     &__box{
         background: #e7e3ff;
         padding: 30px 0 30px 30px;
         border-radius: 10px;
-        width: 355px;
+        width: 400px;
         h3{
             color: rgba(0, 0, 0, 0.5);
             font-size: 23px;
@@ -63,6 +68,7 @@
         }
     }
     &__add{
+        margin: 0 auto;
         margin-top: 50px;
         font-size: 23px;
         font-weight: 500;
@@ -81,6 +87,9 @@
 
     @media (max-width:768px) {
         &__btn{
+            justify-content: center;
+        }
+        &__block{
             justify-content: center;
         }
     }

@@ -1,11 +1,11 @@
-body{
-    font-family: "inter";
-    margin: 0;
-    button,
-    li{
-        cursor: pointer;
-        margin: 10px 0;
-    }
+body {
+  font-family: "inter";
+  margin: 0;
+  button,
+  li {
+    cursor: pointer;
+    margin: 10px 0;
+  }
 }
 
 h1,
@@ -13,36 +13,30 @@ h2,
 h3,
 h4,
 p,
-li{
-    font-family: "inter";
-    margin: 0;
+li {
+  font-family: "inter";
+  margin: 0;
 }
 
-li:hover{
-    color: #008F6A ;
-    transition: all 0.3s;
-    cursor: pointer;
+.container {
+  margin: 0 auto;
+  max-width: 1374px;
+  // max-width: 375px;
 }
 
-.container{
-    margin: 0 auto;
-    max-width: 1374px;
-    // max-width: 375px;
+ul {
+  list-style: none;
+  padding: 0;
 }
-
-ul{
-    list-style: none;
-    padding: 0;
-}
-.line{
-    width: 100%;
-    border: #008F6A solid 1px;
+.line {
+  width: 100%;
+  border: #008f6a solid 1px;
 }
 .hidden {
-    display: none;
+  display: none;
 }
-a{
-    font-style: none;
-    text-decoration: none;
-    color: inherit;
+a {
+  font-style: none;
+  text-decoration: none;
+  color: inherit;
 }

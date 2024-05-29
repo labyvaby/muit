@@ -19,12 +19,6 @@ li {
   margin: 0;
 }
 
-li:hover {
-  color: #008F6A;
-  transition: all 0.3s;
-  cursor: pointer;
-}
-
 .container {
   margin: 0 auto;
   max-width: 1374px;
@@ -37,7 +31,7 @@ ul {
 
 .line {
   width: 100%;
-  border: #008F6A solid 1px;
+  border: #008f6a solid 1px;
 }
 
 .hidden {
@@ -92,6 +86,14 @@ a {
 }
 .header__list li {
   white-space: nowrap;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.header__list li:hover {
+  color: #008f6a;
+  text-decoration: #008f6a;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
 }
 .header__top {
   display: flex;
@@ -515,6 +517,12 @@ a {
 
 .staff {
   margin: 50px 0;
+}
+.staff__title {
+  font-weight: 600;
+  font-size: 50px;
+  color: #2b1e74;
+  margin: 50px 0px;
 }
 .staff__filter ul {
   margin-top: 45px;
@@ -1036,6 +1044,10 @@ a {
   }
 }
 
+.studying__content {
+  display: flex;
+  flex-direction: column;
+}
 .studying h2 {
   color: var(--blue, #0c0834);
   text-align: left;
@@ -1062,16 +1074,17 @@ a {
   transition: 0.5s;
 }
 .studying__block {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 10px;
-  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
 }
 .studying__box {
   background: #e7e3ff;
   padding: 30px 0 30px 30px;
   border-radius: 10px;
-  width: 355px;
+  width: 400px;
 }
 .studying__box h3 {
   color: rgba(0, 0, 0, 0.5);
@@ -1100,6 +1113,7 @@ a {
   color: #ffffff;
 }
 .studying__add {
+  margin: 0 auto;
   margin-top: 50px;
   font-size: 23px;
   font-weight: 500;
@@ -1117,6 +1131,9 @@ a {
 }
 @media (max-width: 768px) {
   .studying__btn {
+    justify-content: center;
+  }
+  .studying__block {
     justify-content: center;
   }
 }
@@ -1207,7 +1224,6 @@ a {
   background: #f1f4fa;
   padding: 10px;
   width: 650px;
-  height: 315px;
 }
 .specialAbilities__box h2 {
   color: var(--blue, #0c0834);
@@ -1503,8 +1519,7 @@ a {
 .program__box {
   margin-top: 53px;
   display: flex;
-  -moz-column-gap: 22px;
-       column-gap: 22px;
+  column-gap: 22px;
   display: flex;
   flex-wrap: wrap;
   row-gap: 35px;
@@ -2272,16 +2287,16 @@ a {
   color: #2b1e74;
   margin-top: 35px;
 }
+.AboutUniversity__ulSecond {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 .AboutUniversity__block {
   margin-top: 60px;
   padding: 16px 27px;
   background: #fff;
   border-radius: 55px;
-}
-.AboutUniversity__block ul {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
 }
 .AboutUniversity__block span {
   font-weight: bold;
@@ -2432,5 +2447,92 @@ a {
   .AboutUniversity__box {
     flex-wrap: wrap;
     gap: 15px;
+  }
+}
+.rating__content {
+  padding: 16px 220px;
+  background: #2b1e74;
+  text-align: center;
+  border-radius: 20px;
+}
+.rating__content h2 {
+  font-weight: 500;
+  font-size: 60px;
+  color: #ffffff;
+}
+.rating__box {
+  display: flex;
+  gap: 20px;
+  margin-top: 45px;
+}
+.rating__box img {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1228px) {
+  .rating__box {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .rating__content h2 {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .rating__content h2 {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 688px) {
+  .rating__box {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 518px) {
+  .rating__content {
+    padding: 16px;
+  }
+  .rating__content h2 {
+    font-size: 45px;
+    width: 100%;
+  }
+  .rating__box {
+    margin-bottom: 20px;
+  }
+  .rating__box img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .rating__content {
+    padding: 16px;
+  }
+  .rating__content h2 {
+    font-size: 45px;
+    width: 100%;
+  }
+  .rating__box {
+    margin-bottom: 20px;
+  }
+  .rating__box img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .rating__content {
+    padding: 16px;
+  }
+  .rating__content h2 {
+    font-size: 35px;
+    width: 100%;
+  }
+  .rating__box {
+    margin-bottom: 20px;
+  }
+  .rating__box img {
+    width: 300px;
   }
 }/*# sourceMappingURL=index.css.map */
